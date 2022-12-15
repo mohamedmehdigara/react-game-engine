@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
+    "start": "react-scripts start",
     "build": "webpack",
     "prepublish": "rm -rf ./build && npm run build"
   },
@@ -33,16 +34,34 @@
     "react": ">= 16.3.0"
   },
   "devDependencies": {
-    "babel-jest": "^22.4.1",
-    "babel-loader": "^7.0.0",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "jest": "^22.4.2",
     "react": "*",
     "react-test-renderer": "^16.2.0",
     "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "node-sass": "^8.0.0",
+    "react-game-engine": "^1.1.0",
+    "react-scripts": "^4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
